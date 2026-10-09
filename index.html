@@ -24,7 +24,7 @@
 <style>
 .career{padding-block:52px 58px;border-top:1px solid var(--line)}
 .career-heading{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:28px}
-.career-heading .eyebrow{margin-bottom:12px}.career-heading h2{font-size:38px}
+.career-heading .eyebrow{margin-bottom:12px}.career-heading h2{font-size:clamp(32px,3.5vw,46px)}
 .career-heading>p{font-size:15px;color:var(--muted);margin:0;max-width:none}
 .career-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative;margin-bottom:26px}
 .career-tabs:before{content:'';position:absolute;left:28px;right:28px;top:24px;height:2px;background:#d3d8e8}
@@ -51,7 +51,7 @@
 @keyframes career-unfold{from{clip-path:inset(0 0 100% 0);opacity:.3}to{clip-path:inset(0 0 0 0);opacity:1}}
 @keyframes career-ink{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:600px){.career-marker{width:42px;height:42px}.career-tabs:after{left:21px;top:19px}}
-@media(max-width:600px){.career-heading{align-items:flex-start;flex-direction:column;gap:12px}.career-heading h2{font-size:32px}.career-heading>p{max-width:none}.career-title{font-size:18px}.career-subtitle{display:none}.career-tabs{margin-bottom:22px}.career-tab{padding-right:10px}.career-dot{width:42px;height:42px}.career-tabs:before{top:20px;left:21px;right:21px}.career-panel{grid-template-columns:1fr;gap:12px;padding:24px;min-height:0}.career-panel svg{width:48px;height:48px}.career-panel h3{font-size:24px}}
+@media(max-width:600px){.career-heading{align-items:flex-start;flex-direction:column;gap:12px}.career-heading h2{font-size:clamp(32px,3.5vw,46px)}.career-heading>p{max-width:none}.career-title{font-size:18px}.career-subtitle{display:none}.career-tabs{margin-bottom:22px}.career-tab{padding-right:10px}.career-dot{width:42px;height:42px}.career-tabs:before{top:20px;left:21px;right:21px}.career-panel{grid-template-columns:1fr;gap:12px;padding:24px;min-height:0}.career-panel svg{width:48px;height:48px}.career-panel h3{font-size:24px}}
 @media(prefers-reduced-motion:reduce){.career.enhanced .career-panel.is-entering,.career.enhanced .career-panel.is-entering h3,.career.enhanced .career-panel.is-entering>div>p,.career.enhanced .career-panel.is-entering>div>details,.career.enhanced .career-panel.is-entering svg,.career-more[open]>p{animation:none}.career-dot,.career-marker,.career-tabs:after{transition:none}}
 
 </style>
